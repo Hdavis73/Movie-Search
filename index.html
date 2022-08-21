@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="normalize-reset/reset.css">
+    <link rel="stylesheet" href="normalize-reset/normalize.css">
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Fleshlight Media</title>
+</head>
+
+<body>
+
+    <main class="main-page-wrap fade-in">
+
+
+
+        <section class="top-main">
+
+            <video playsinline autoplay muted loop class="hidden" src=""></video>
+
+            <!-- <div class="logo">FLESHLIGHT PLUS</div> -->
+            <div class="search-bar-wrap"> <input placeholder="Search..." class="search-bar" type="text"><button class="search">Search</button> </div>
+            <div class="floating">
+                <h1 class="offerText ad"></h1>
+                <div class="partner-logo-lg-wrap"> <p class="partner-logo-lg"></p> </div>
+                <h3>Rating: <span class="rating"></span></h3>
+                <h3>Release Date: <span class="release"></span></h3>
+                
+                    <a class="deal-btn btn">FIND TRAILER</a>
+                    <button class="info-btn hidden">MORE INFO</button>
+                
+            </div>
+        </section>
+
+
+
+        <section class="bottom-main">
+            <button class="arrow left-arrow"> <img src="logos/left-arrow-white.png" alt=""> </button>
+
+            <div class="slider-wrap">
+                <div class="slider">
+
+                </div>
+            </div>
+
+            <button class="arrow right-arrow"> <img src="logos/right-arrow-white.png" alt=""> </button>
+        </section>
+
+    </main>
+
+    <section class="popup-wrap hidden">
+        <section class="popup">
+            <h2>Select you content preferences</h2>
+            <p>scallywag dance the hempen jig carouser broadside cable strike colors. Shiver me timbers</p>
+
+            <form action="">
+                <div class="content-options">
+                    <div class="straight-content content-box">
+                        <input id="straight" class="straight-check" type="checkbox">
+                        <img src="logos/straight.png" alt="straight-logo">
+                        <span>straight</span>
+                    </div>
+
+                    <div class="gay-content content-box">
+                        <input id="gay" class="gay-check" type="checkbox">
+                        <img src="logos/gay.png" alt="gay-logo">
+                        <span>gay</span>
+                    </div>
+
+                    <div class="trans-content content-box">
+                        <input id="trans" class="trans-check" type="checkbox">
+                        <img src="logos/trans.png" alt="trans-logo">
+                        <span>trans</span>
+                    </div>
+                </div>
+                <button type="button" class="save-preference">Save and Go</button>
+            </form>
+
+        </section>
+    </section>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
