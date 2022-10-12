@@ -325,6 +325,11 @@ function setFirst(data) {
 // }
 
 
+// ============================================LOGIN STUFF==================================
+// const email = document.querySelector('email-authentication')
+// const password = docuemnt.querySelector('password-authentication')
+// const emailBtn = document.querySelector('.email-btn')
+// const passBtn = document.querySelector('.password-btn')
 
 
 

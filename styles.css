@@ -92,7 +92,7 @@ video {
 }
 
 .hidden {
-    display: none;
+    display: none !important;
 }
 
 .popup {
@@ -434,7 +434,154 @@ div.video-img:focus {
 
 /* =====Media Carousel End===== */
 
+/* ================================SIGN IN START============================= */
 
+
+.login {
+    width: 100%;
+    height: 100%;
+    padding: 20px 8%;
+    background-image: URL(photos/background-ballroom.jpg);
+    background-size: cover;
+    font-family: 'Noto Sans JP';
+    color: #eaece7;
+    display:flex;
+    flex-direction: column;
+}
+
+.login::after {
+    content: '';
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.379);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.login input {
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 20px;
+} 
+
+header {
+    position: relative;
+    z-index: 3;
+}
+
+
+header span {
+    margin-right: 20px;
+    font-weight: 600;
+}
+
+.btn {
+    padding: 12px 20px;
+    font-size: var(--fs-sm);
+    color: white;
+    background-color: var(--green);
+    border: 2px solid var(--green);
+    border-radius: 5px;
+    cursor: pointer;
+    text-shadow: rgba(0, 0, 0, 0.605) 0px 0px 10px;
+}
+
+.btn:hover {
+    background-color: transparent;
+    /* border: 2px solid var(--green); */
+}
+
+.logo {
+    position: relative;
+    z-index: 1;
+}
+
+.signIn-form {
+    background-color: #000000b3;
+    width: 75%;
+    margin: auto;
+    /* margin-top: 10%; */
+    align-self: center;
+    padding: 50px 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 50px;
+    position: relative;
+    z-index: 3;
+    border-radius: 10px;
+}
+
+.signIn-form span {
+    color: white;
+    /* color: var(--green); */
+    font-size: var(--fs-lg);
+    /* margin-bottom: 40px; */
+    font-weight: 500;
+}
+
+
+
+.input-wrap {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.submit-btn {
+    margin-top: 10px;
+    max-width: 97.71px;
+    align-self: flex-end;
+}
+
+
+
+
+
+
+@media screen and (max-width:850px) {
+    .btn {
+        padding: 10px 20px;
+    }
+}
+
+@media screen and (max-width:750px) {
+    body {
+        padding: 20px 6%;
+    }
+
+    .signIn-form {
+        width: 90%;
+    }
+
+    .logo img{
+        width: 170px;
+     }
+
+    .sign-up span {
+        display: none;
+    }
+}
+
+@media screen and (max-width:550px) {
+    .signIn-form {
+        width: 95%;
+    }
+
+    .logo img {
+        width: 150px;
+    }
+
+    .btn {
+        padding: 8px 18px
+    }
+}
+/* ================================SIGN IN END============================= */
 
 
 
